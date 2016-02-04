@@ -28,9 +28,3 @@ class Game
   attr_reader :players
 
 end
-
-game = Game.new('p1', 'p2')
-puts game.player
-puts game.next_turn
-puts game.player
-puts game.next_turn

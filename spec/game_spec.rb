@@ -52,4 +52,15 @@ describe Game do
       game.attack(p2)
     end
   end
+
+  describe '#next_turn' do
+    it 'should start with player 1 ie "Ash"' do
+      expect(game.player.name).to eq 'Ash'
+    end
+
+    it 'should have player 2 on second turn ie Jessie' do
+      game.next_turn
+      expect(game.player.name).to eq 'Jessie'
+    end
+  end
 end
