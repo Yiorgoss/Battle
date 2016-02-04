@@ -4,7 +4,7 @@ class Game
 
   def initialize(p1, p2)
     @players = [p1, p2]
-    @turn_count = 1
+    @turn_count = 0
   end
 
   def player(number=(turn_count + 1))
@@ -28,3 +28,9 @@ class Game
   attr_reader :players
 
 end
+
+game = Game.new('p1', 'p2')
+puts game.player
+puts game.next_turn
+puts game.player
+puts game.next_turn
